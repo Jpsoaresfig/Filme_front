@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d4c76;
+  font-family: 'Segoe UI', sans-serif;
+  color: #d5d5d5;
+}
+
+app-root, main, form, ul, li, div, section {
+  background-color: #0d4c76;
+  color: #d5d5d5;
+}
+
+h1, h2, h3 {
+  color: #f0b442;
+  text-align: center;
+}
+
+p, label, span {
+  color: #d5d5d5;
+}
+
+button {
+  background-color: #049ff8;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #f0b442;
+  transform: scale(1.03);
+  color: #0d4c76;
+}
+
+button:disabled {
+  background: #848c8c;
+  cursor: not-allowed;
+}

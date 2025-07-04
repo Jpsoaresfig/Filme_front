@@ -15,4 +15,8 @@ export class FilmesService {
   adicionarFilme(filme: Filme) {
     return this.http.post<Filme>(this.apiUrl, filme);
   }
+
+  removeFilme(id: number) {
+    return this.http.delete(`${this.apiUrl}/${id}`);
+  }
 }

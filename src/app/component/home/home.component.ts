@@ -24,19 +24,27 @@ import { RouterModule } from '@angular/router';
         <p><strong>Avaliação:</strong> {{ filme.avaliacao }}/10</p>
         <p><strong>Assistido em:</strong> {{ filme.dataAssistido }}</p>
         <hr />
+        <button (click)="removerFilme(filme.id)">Remover Filme</button>
       </li>
+      
     </ul>
     <p *ngIf="!filmes">Carregando filmes...</p>
   `,
   styleUrls: ['./home.component.css']
 })
 export class FilmesComponent {
-  private filmesService = inject(FilmesService);
+  public filmesService = inject(FilmesService);
   filmes: Filme[] | null = null;
 
   constructor() {
     this.filmesService.getFilmes().subscribe((data) => {
       this.filmes = data;
+    });
+  }
+
+  removerFilme(id: number) {
+    this.filmesService.removeFilme(id).subscribe(() => {
+      this.filmes = this.filmes?.filter(filme => filme.id !== id) || null;
     });
   }
 }
