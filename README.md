@@ -1,60 +1,69 @@
-# FliminhoFront
+<h1>🎬 Filme Front</h1>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+<p><strong>Filme Front</strong> é o front-end de um sistema de catálogo de filmes pessoais. Cada usuário pode cadastrar, listar, editar e excluir os filmes que já assistiu.</p>
 
-## Development server
+<hr>
 
-To start a local development server, run:
+<h2>📌 Objetivo</h2>
+<p>Oferecer uma plataforma simples e bonita para o usuário organizar seus filmes assistidos.</p>
 
-```bash
-ng serve
-```
+<hr>
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+<h2>🚀 Tecnologias Utilizadas</h2>
+<ul>
+  <li><strong>Angular</strong> – Framework front-end principal</li>
+  <li><strong>TypeScript</strong> – Linguagem principal</li>
+  <li><strong>HTML + CSS</strong> – Estrutura e estilo</li>
+  <li><strong>Reactive Forms</strong> – Manipulação de formulários</li>
+  <li><strong>HTTPClient</strong> – Integração com a API</li>
+</ul>
 
-## Code scaffolding
+<hr>
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+<h2>🧠 Funcionalidades</h2>
+<ul>
+  <li>Cadastro de filmes</li>
+  <li>Listagem dos filmes por usuário</li>
+  <li>Edição e exclusão de filmes</li>
+  <li>Integração com API NestJS</li>
+  <li>Login/autenticação (em desenvolvimento)</li>
+</ul>
 
-```bash
-ng generate component component-name
-```
+<hr>
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+<h2>🛠️ Como Rodar o Projeto</h2>
+<ol>
+  <li>Clone o repositório:<br><code>git clone https://github.com/Jpsoaresfig/Filme_front.git</code></li>
+  <li>Instale as dependências:<br><code>cd Filme_front && npm install</code></li>
+  <li>Rode o servidor Angular:<br><code>ng serve</code></li>
+  <li>Acesse em: <code>http://localhost:4200</code></li>
+</ol>
 
-```bash
-ng generate --help
-```
+<p><strong>⚠️ Obs:</strong> O back-end (API NestJS) deve estar rodando em <code>http://localhost:3000</code></p>
 
-## Building
+<hr>
 
-To build the project run:
+<h2>📁 Estrutura de Pastas</h2>
 
-```bash
-ng build
-```
+<pre>
+src/
+├── app/
+│   ├── components/        # Componentes reutilizáveis
+│   ├── pages/             # Telas principais
+│   ├── services/          # Serviços e requisições
+│   └── app.module.ts      # Módulo principal
+</pre>
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+<hr>
 
-## Running unit tests
+<h2>💡 Próximos Passos</h2>
+<ul>
+  <li>Finalizar sistema de login</li>
+  <li>Filtros e ordenação por gênero/ano</li>
+  <li>Melhoria visual com Angular Material</li>
+</ul>
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+<hr>
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# Filme_front
+<h2>🧑‍💻 Autor</h2>
+<p>João Pedro Soares de Figueiredo</a></p>
